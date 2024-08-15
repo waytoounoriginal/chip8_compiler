@@ -1,3 +1,2 @@
-./.idea
-./env
-./chip8_compiler.*
+/chip8_compiler.egg-info/
+/.idea/
