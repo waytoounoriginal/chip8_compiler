@@ -1,6 +1,0 @@
-setup.py
-chip8_compiler.egg-info/PKG-INFO
-chip8_compiler.egg-info/SOURCES.txt
-chip8_compiler.egg-info/dependency_links.txt
-chip8_compiler.egg-info/entry_points.txt
-chip8_compiler.egg-info/top_level.txt

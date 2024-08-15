@@ -1,2 +1,0 @@
-[console_scripts]
-chip8_compiler = chip8_compiler.chip8_cli:main
