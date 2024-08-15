@@ -174,7 +174,7 @@ def parse_file(file_path: str) -> bytes:
 
     code: str = ""
     with open(file_path, "r") as f:
-        code = "\n".join(f.readlines())
+        code = f.read()
 
     valid_code: bool = __parse_code(code)
 
