@@ -1,0 +1,15 @@
+segment code:
+
+    JP __ADDR__     ; 200
+    JP __ADDR__     ; 202
+    JP __ADDR__     ; 204
+    JP __ADDR__     ; 206
+    JP __ADDR__     ; 208
+    JP __ADDR__     ; 20A
+    JP __ADDR__     ; 20C
+    JP __ADDR__     ; 20E
+
+segment_end
+
+segment data:
+segment_end
