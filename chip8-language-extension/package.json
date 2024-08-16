@@ -1,0 +1,30 @@
+{
+  "name": "mini8-language",
+  "displayName": "Mini8 Language",
+  "description": "Syntax highlighting for a custom chip8-like language",
+  "version": "0.0.1",
+  "publisher": "waytoounoriginal",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mini8",
+        "aliases": ["Mini8", "mini8"],
+        "extensions": [".mini8"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mini8",
+        "scopeName": "source.mini8",
+        "path": "./syntaxes/mini8.tmLanguage.json"
+      }
+    ]
+  }
+}

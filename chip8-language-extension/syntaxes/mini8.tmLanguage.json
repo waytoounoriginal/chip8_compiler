@@ -1,0 +1,47 @@
+{
+  "fileTypes": ["mini8"],
+  "name": "mini8",
+  "patterns": [
+    {
+      "name": "comment.line.semicolon.mini8",
+      "match": ";.*$"
+    },
+    {
+      "name": "keyword.control.mini8",
+      "match": "\\b(CLS|RET|SYS|JP|CALL|SE|SNE|LD|ADD|OR|AND|XOR|SUB|SHR|SUBN|SHL|RND|DRW|SKP|SKNP)\\b"
+    },
+    {
+      "name": "variable.language.mini8",
+      "match": "\\b(V0x[0-9A-Fa-f]{2}|I|DT|K|ST|F|B)\\b"
+    },
+    {
+      "name": "constant.numeric.hex.mini8",
+      "match": "\\$0x[0-9A-Fa-f]+"
+    },
+    {
+      "name": "constant.numeric.decimal.mini8",
+      "match": "\\$d[0-9]+"
+    },
+    {
+      "name": "constant.numeric.binary.mini8",
+      "match": "\\$b[01]+"
+    },
+    {
+      "name": "keyword.declaration.mini8",
+      "match": "\\b(segment|segment_end|variable|label)\\b"
+    },
+    {
+      "name": "entity.name.label.mini8",
+      "match": "\\b__lab\\b"
+    },
+    {
+      "name": "variable.other.mini8",
+      "match": "\\btest\\b"
+    },
+    {
+      "name": "punctuation.separator.colon.mini8",
+      "match": ":"
+    }
+  ],
+  "scopeName": "source.mini8"
+}
