@@ -13,7 +13,7 @@ import chip8_compiler as cc
 class TestInstructions(unittest.TestCase):
 
     def test_all_instructions(self):
-        compiled_bytecodes = cc.parse_file(file_path="./instruction_test_input.chip8")
+        compiled_bytecodes = cc.parse_file(file_path="./instruction_test_input.mini8")
 
         with open("./instruction_test_expected.ch8", "rb") as f:
             expected_bytecodes = f.read()
@@ -21,7 +21,7 @@ class TestInstructions(unittest.TestCase):
         self.assertEqual(compiled_bytecodes, expected_bytecodes, "Byte codes not equal")
 
     def test_special_token(self):
-        compiled_bytecodes = cc.parse_file(file_path="./special_token_test.chip8")
+        compiled_bytecodes = cc.parse_file(file_path="./special_token_test.mini8")
 
         with open("./special_token_test_expected.ch8", "rb") as f:
             expected_bytecodes = f.read()
@@ -31,7 +31,7 @@ class TestInstructions(unittest.TestCase):
     def test_time_1k(self):
         # We want to have a time under 0.01 seconds
         start = timer()
-        compiled_bytecodes = cc.parse_file(file_path="./time_1k_test.chip8")
+        compiled_bytecodes = cc.parse_file(file_path="./time_1k_test.mini8")
         end = timer()
         print("TIME TAKEN (1k):", end - start, "SECONDS")
 
@@ -40,7 +40,7 @@ class TestInstructions(unittest.TestCase):
     def test_time_10k(self):
         # We want to have a time under 0.01 seconds
         start = timer()
-        compiled_bytecodes = cc.parse_file(file_path="./time_10k_test.chip8")
+        compiled_bytecodes = cc.parse_file(file_path="./time_10k_test.mini8")
         end = timer()
         print("TIME TAKEN (10k):", end - start, "SECONDS")
 

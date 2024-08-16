@@ -1,6 +1,6 @@
 segment code:
    CLS
-    RET
+    RET         ; Comment test
     SYS $0x0
     JP $0x0
     CALL $0x0
@@ -37,4 +37,9 @@ segment code:
 segment_end
 
 segment data:
+    variable test $0x00 ; hex
+    variable test_dec $d10  ; dec
+    variable test_bin $b01110   ; bin
+    label __lab:
+    ; Label code
 segment_end
